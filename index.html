@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luiz Gustavo Trevisan</title>
     <link rel="stylesheet" href="style.css">
 <style>
-body 
-{
-    font-family: Arial, sans-serif;
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background: url('https://i.pinimg.com/originals/9c/ea/6b/9cea6b7a9c873ddef36c00e80a6420a4.jpg') no-repeat center center fixed; /*Link para imagem de fundo*/
@@ -14,13 +16,15 @@ body
 }
 
 .container {
-     max-width: 900px;
+    max-width: 900px;
     margin: 20px auto;
-    background: rgba(255, 255, 255); /*cor*/
+    background: white;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
+/* Cabeçalho */
 .profile-header {
     text-align: center;
     background: #FFA726;
@@ -36,71 +40,100 @@ body
 }
 
 h1 {
-    font-size: 24px;
+    font-family: 'Georgia', serif;
+    font-size: 26px;
     margin: 10px 0 5px;
 }
 
 p {
     font-size: 14px;
     line-height: 1.5;
-    margin: 10px 0;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .social-links a {
-    color: white;
     text-decoration: none;
-    font-size: 14px;
-    padding: 5px 10px;
-    background: #43a1ff;
+    padding: 8px 16px;
+    background: #4DB6AC;
+    color: white;
     border-radius: 5px;
-    transition: background 0.3s;
+    font-size: 14px;
+    transition: background 0.3s ease;
 }
 
 .social-links a:hover {
-    background: #195ae6;
+    background: #00796B;
 }
 
-.content {
+/*Seção Sobre Mim*/
+.about {
     padding: 20px;
+}
+
+.about h2 {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Seção Projetos */
+.projects {
+    padding: 20px;
+}
+
+.projects h2 {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 .card {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
 }
 
 .card img {
-    width: 200px; /*Muda a largura */
-    height: auto; /*Mantém a proporção*/
-    margin-right: 20px;
-    border-radius: 8px
+    width: 180px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 8px;
 }
 
 .card p {
-    flex: 1;
     font-size: 14px;
+    color: #555;
     line-height: 1.6;
 }
+
 </style>
 </head>
 <body>
     <div class="container">
         <header class="profile-header">
             <div class="profile-photo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOuxrvcNMfGLh73uKP1QqYpKoCB0JLXiBMvA&s" alt="Foto de Luiz Gustavo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOuxrvcNMfGLh73uKP1QqYpKoCB0JLXiBMvA&s">
             </div>
             <h1>Luiz Gustavo Trevisan</h1>
-            <p>bio</p>
+            <p>Oi! Bem-vindo ao meu portfólio. </p>
             <div class="social-links">
                 <a href="#">E-mail</a>
                 <a href="#">LinkedIn</a>
@@ -109,18 +142,30 @@ p {
                 <a href="#">Currículo</a>
             </div>
         </header>
-        <main class="content">
-            <section class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/5323/5323572.png?semt=ais_hybrid" alt="Imagem 1">
-                <p>Livro</p>
+
+        <main>
+            <section class="about">
+                <h2>Sobre Mim</h2>
+                <p>
+                    blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá
+                    blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá.
+                </p>
             </section>
-            <section class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/5323/5323572.png?semt=ais_hybrid" alt="Imagem 2">
-                <p>Dash</p>
-            </section>
-            <section class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/5323/5323572.png?semt=ais_hybrid" alt="Imagem 3">
-                <p>Poster</p>
+
+            <section class="projects">
+                <h2>Projetos</h2>
+                <div class="card">
+                    <img src="https://cdn-icons-png.freepik.com/256/5323/5323572.png?semt=ais_hybrid" alt="Projeto 1">
+                    <p>Blábláblá blá blá blá blá blá blá blá blá blá blá blá blá.</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn-icons-png.freepik.com/256/5323/5323572.png?semt=ais_hybrid" alt="Projeto 2">
+                    <p>Blábláblá blá blá blá blá blá blá blá blá blá blá blá blá.</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn-icons-png.freepik.com/256/5323/5323572.png?semt=ais_hybrid" alt="Projeto 3">
+                    <p>Blábláblá blá blá blá blá blá blá blá blá blá blá blá blá.</p>
+                </div>
             </section>
         </main>
     </div>
